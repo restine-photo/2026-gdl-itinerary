@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guadalajara — Proposed Itinerary</title>
+<style>
+:root{
+  --bg: #10140D;
+  --surface: #1A2116;
+  --surface-raised: #232C1D;
+  --line: #3B4A30;
+  --accent: #8FAE6B;
+  --accent-soft: #5C7047;
+  --accent-pale: #B7CE9A;
+  --accent-deep: #4F6B3A;
+  --ink: #F1F4EC;
+  --ink-dim: #9CAA8D;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+
+body{
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 600px 300px at 15% -5%, rgba(143,174,107,0.16), transparent),
+    radial-gradient(ellipse 500px 260px at 90% 10%, rgba(183,206,154,0.08), transparent);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 40px 20px 80px;
+}
+
+.wrap{ max-width: 720px; margin: 0 auto; }
+
+header{ margin-bottom: 36px; }
+
+.eyebrow{
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-pale);
+  margin-bottom: 10px;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h1 em{
+  font-style: normal;
+  color: var(--accent);
+}
+
+.sub{
+  color: var(--ink-dim);
+  font-size: 14.5px;
+  margin-top: 12px;
+  max-width: 56ch;
+  line-height: 1.55;
+}
+
+.trip-meta{
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.trip-meta div{ font-size: 12.5px; color: var(--ink-dim); }
+.trip-meta strong{ display: block; color: var(--ink); font-size: 14px; margin-top: 2px; }
+
+.note-banner{
+  font-size: 12px;
+  color: var(--ink-dim);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 20px 0 34px;
+  line-height: 1.5;
+}
+
+.day{
+  display: flex;
+  gap: 18px;
+  margin-bottom: 4px;
+}
+
+.day-rail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 54px;
+}
+
+.day-num{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  border: 1px solid var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent-pale);
+}
+
+.day-line{
+  flex: 1;
+  width: 1px;
+  background: var(--line);
+  margin: 6px 0;
+}
+
+.day-body{
+  padding-bottom: 34px;
+  flex: 1;
+}
+
+.day-date{
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 3px;
+}
+
+.day-title{
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.day-card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.day-card p{
+  font-size: 14px;
+  color: var(--ink-dim);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.day-card p:last-child{ margin-bottom: 0; }
+
+.day-card strong{ color: var(--ink); font-weight: 700; }
+
+.tag{
+  display: inline-block;
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-deep);
+  color: var(--ink);
+  padding: 2px 7px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+footer{
+  margin-top: 20px;
+  font-size: 12.5px;
+  color: var(--ink-dim);
+  line-height: 1.6;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Guadalajara &amp; Tequila Valley</div>
+    <h1>Proposed <em>Itinerary</em></h1>
+    <p class="sub">A rough draft built from the saved places list and distillery research — nothing booked yet. Meant as a starting point to react to and adjust.</p>
+    <div class="trip-meta">
+      <div>Dates<strong>Nov 20 – 28, 2026</strong></div>
+      <div>From<strong>Chicago</strong></div>
+      <div>Nights<strong>8</strong></div>
+      <div>Base<strong>Guadalajara + Tequila town</strong></div>
+    </div>
+  </header>
+
+  <div class="note-banner">
+    Draft status: hotel, tours, and restaurant reservations are all placeholders below — nothing is confirmed. Treat this as a shape for the week, not a locked schedule.
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">1</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Friday, Nov 20</div>
+      <div class="day-title">Arrival <span class="tag">Early landing</span></div>
+      <div class="day-card">
+        <p>Land around 6am — GDL and Chicago share a time zone, so it's an early morning rather than jet lag. Uber to the hotel in <strong>Colonia Americana / Chapultepec</strong> by ~7:30-8am.</p>
+        <p>Ask about early check-in, or drop bags at the front desk and use the morning for a slow coffee walk around the neighborhood.</p>
+        <p>Rest once the room's ready. Easy, early dinner at <strong>La Posta</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">2</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Saturday, Nov 21</div>
+      <div class="day-title">Centro Histórico</div>
+      <div class="day-card">
+        <p>Morning walking tour with <strong>Camina GDL</strong> — Cathedral, Teatro Degollado, Hospicio Cabañas.</p>
+        <p>Dinner at <strong>Elefante de Piedra</strong>, drinks after at <strong>Tiny Bar Speakeasy</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">3</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Sunday, Nov 22</div>
+      <div class="day-title">Tlaquepaque</div>
+      <div class="day-card">
+        <p>Day trip to the artisan village — galleries, ceramics, glassblowing, wandering Calle Independencia.</p>
+        <p>Dinner at <strong>Brasa y Sal</strong> back in Chapultepec.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">4</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Monday, Nov 23</div>
+      <div class="day-title">Move to Tequila town <span class="tag">Change of base</span></div>
+      <div class="day-card">
+        <p>Transfer out to the town of Tequila (~1 hr). Check into <strong>Casa Salles Hotel</strong> or <strong>Hotel Gloriagave</strong> for two nights.</p>
+        <p>Casa Salles sits right next to <strong>El Tequileño</strong> distillery — an easy, low-effort visit the same afternoon if staying there.</p>
+        <p>Dinner at <strong>La Taberna del Cofrade</strong>, the underground tavern-style restaurant.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">5</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Tuesday, Nov 24</div>
+      <div class="day-title">Distillery day <span class="tag">Headliners</span></div>
+      <div class="day-card">
+        <p><strong>Arette</strong> (El Llano Distillery) in the morning — Orendain family, over 125 years independent, additive-free small-batch.</p>
+        <p><strong>La Fortaleza</strong> midday — Sauza family descendants, the most traditional production method in the valley, tasting inside their cave.</p>
+        <p>If there's time and energy left, <strong>Cascahuín</strong> in El Arenal is a short hop and already a favorite from the saved list.</p>
+        <p><strong>Vive Tequila Tour</strong> or <strong>Explora México Tours</strong> can likely arrange the logistics for this route.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">6</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Wednesday, Nov 25</div>
+      <div class="day-title">Back to Guadalajara</div>
+      <div class="day-card">
+        <p>Transfer back to GDL, check into the city hotel for the remaining nights.</p>
+        <p>Easy afternoon, relaxed dinner — good night to just wing it based on what's nearby.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">7</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Thursday, Nov 26</div>
+      <div class="day-title">Flex day</div>
+      <div class="day-card">
+        <p>Open day — more Chapultepec exploring, shopping, or a repeat visit to a favorite spot from earlier in the week.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">8</div><div class="day-line"></div></div>
+    <div class="day-body">
+      <div class="day-date">Friday, Nov 27</div>
+      <div class="day-title">Last full day <span class="tag">Send-off dinner</span></div>
+      <div class="day-card">
+        <p>Wrap-up day — anything missed, souvenirs, packing.</p>
+        <p>Good candidate for a last-hurrah dinner, since there's nowhere to be early the next morning but the airport.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-rail"><div class="day-num">9</div></div>
+    <div class="day-body">
+      <div class="day-date">Saturday, Nov 28</div>
+      <div class="day-title">Departure</div>
+      <div class="day-card">
+        <p>Fly back to Chicago.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Built from the saved places tracker and distillery research — Casa Sauza, Jose Cuervo, and Tequila Atanasio are still on the list as alternates if the Nov 24 lineup changes. Nothing here is booked; treat dates and pairings as a starting point.
+  </footer>
+</div>
+
+</body>
+</html>
