@@ -2,159 +2,154 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>You're Invited — Erika's 40th</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg: #10140D;
-  --surface: #1A2116;
-  --surface-raised: #232C1D;
-  --line: #3B4A30;
-  --accent: #8FAE6B;
-  --accent-soft: #5C7047;
-  --accent-pale: #B7CE9A;
-  --accent-deep: #4F6B3A;
-  --ink: #F1F4EC;
-  --ink-dim: #9CAA8D;
+  --bg: #ece4d4;
+  --paper: #f4efe3;
+  --ink: #3b2f24;
+  --clay: #a4552f;
+  --gold: #c1913f;
+  --agave: #6b7a5a;
+  --brown: #7a4a2b;
+  --ink-dim: #7d6f5c;
 }
-
 *{box-sizing:border-box; margin:0; padding:0;}
-
-html, body{ height: 100%; }
-
+html, body{ height:100%; }
 body{
   background: var(--bg);
   background-image:
-    radial-gradient(ellipse 700px 400px at 20% 0%, rgba(143,174,107,0.18), transparent),
-    radial-gradient(ellipse 600px 320px at 85% 100%, rgba(183,206,154,0.10), transparent);
+    radial-gradient(ellipse 700px 400px at 20% 0%, rgba(193,145,63,0.12), transparent),
+    radial-gradient(ellipse 600px 320px at 85% 100%, rgba(107,122,90,0.14), transparent);
   color: var(--ink);
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+  font-family: 'Barlow Condensed', Arial, sans-serif;
+  min-height:100vh;
+  display:flex; align-items:center; justify-content:center;
+  padding:40px 20px;
 }
+a{ color: var(--brown); }
+a:hover{ color: var(--clay); }
 
-.card{
-  max-width: 480px;
-  width: 100%;
-  text-align: center;
-}
+.card{ max-width:480px; width:100%; text-align:center; }
 
 .eyebrow{
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent-pale);
-  margin-bottom: 18px;
+  font-size:13px; letter-spacing:0.3em; text-transform:uppercase;
+  color:var(--brown); margin-bottom:26px; font-weight:600;
 }
+
+/* badge logo */
+.badge{
+  width:280px; height:280px; margin:0 auto 30px;
+  border-radius:50%; border:2px solid var(--ink);
+  display:flex; align-items:center; justify-content:center; position:relative;
+}
+.badge .inner-ring{ position:absolute; inset:7px; border-radius:50%; border:1px solid var(--ink); }
+.badge svg{ position:absolute; inset:0; width:100%; height:100%; }
+.badge .center{ display:flex; flex-direction:column; align-items:center; gap:2px; margin-top:26px; }
+.badge .forty{
+  font-family:'Cormorant Garamond', serif; font-weight:600;
+  font-size:90px; line-height:0.85; color:var(--clay);
+}
+.badge .rule{ display:flex; align-items:center; gap:8px; margin-top:8px; }
+.badge .rule .line{ width:22px; height:1px; background:var(--ink); }
+.badge .rule .diamond{ width:6px; height:6px; background:var(--gold); transform:rotate(45deg); }
+.badge .est{ font-size:13px; letter-spacing:5px; color:var(--ink); margin-top:6px; font-weight:500; }
 
 h1{
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 14px;
+  font-family:'Cormorant Garamond', serif;
+  font-size:36px; font-weight:600; line-height:1.15; margin-bottom:12px;
 }
+h1 em{ font-style:italic; color:var(--clay); }
 
-h1 em{
-  font-style: normal;
-  color: var(--accent);
-}
-
-.location-line{
-  font-size: 16px;
-  color: var(--ink-dim);
-  margin-bottom: 6px;
-}
+.location-line{ font-size:17px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:8px; }
 
 .dates-line{
-  font-size: 14px;
-  color: var(--accent-pale);
-  letter-spacing: 0.03em;
-  margin-bottom: 40px;
-}
-
-.divider{
-  width: 40px;
-  height: 1px;
-  background: var(--line);
-  margin: 0 auto 34px;
+  display:inline-block;
+  font-size:16px; letter-spacing:0.18em; text-transform:uppercase; font-weight:600;
+  color:var(--brown);
+  border-top:1px solid var(--gold); border-bottom:1px solid var(--gold);
+  padding:7px 18px; margin-bottom:38px;
 }
 
 .cta-btn{
-  display: inline-block;
-  background: var(--accent);
-  color: var(--bg);
-  font-weight: 700;
-  font-size: 15px;
-  text-decoration: none;
-  padding: 14px 32px;
-  border-radius: 999px;
-  transition: filter 0.15s, transform 0.15s;
-  margin-bottom: 28px;
+  display:inline-block;
+  background:var(--clay); color:var(--paper);
+  font-weight:600; font-size:16px; letter-spacing:0.08em; text-transform:uppercase;
+  text-decoration:none; padding:14px 34px; border-radius:2px;
+  transition:filter 0.15s, transform 0.15s;
+  margin-bottom:14px;
 }
+.cta-btn:hover{ filter:brightness(1.08); transform:translateY(-1px); color:var(--paper); }
 
-.cta-btn:hover{ filter: brightness(1.08); transform: translateY(-1px); }
-
-.cta-sub{
-  font-size: 12px;
-  color: var(--ink-dim);
-  margin-bottom: 40px;
-}
+.cta-sub{ font-size:14px; letter-spacing:0.04em; color:var(--ink-dim); margin-bottom:40px; }
 
 .rsvp-box{
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent-deep);
-  border-radius: 10px;
-  padding: 18px 20px;
-  text-align: left;
+  background:var(--paper);
+  border:1px solid var(--ink);
+  padding:20px 22px; text-align:left; position:relative;
 }
-
+.rsvp-box::after{
+  content:''; position:absolute; inset:4px;
+  border:1px solid rgba(59,47,36,0.3); pointer-events:none;
+}
 .rsvp-box .label{
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent-pale);
-  margin-bottom: 8px;
-  font-weight: 700;
+  font-size:11px; letter-spacing:0.25em; text-transform:uppercase;
+  color:var(--clay); margin-bottom:8px; font-weight:600;
 }
+.rsvp-box p{ font-size:15px; color:var(--ink-dim); line-height:1.55; }
+.rsvp-box strong{ color:var(--ink); }
 
-.rsvp-box p{
-  font-size: 14px;
-  color: var(--ink-dim);
-  line-height: 1.55;
-}
-
-.rsvp-box strong{ color: var(--ink); }
-
-footer{
-  margin-top: 34px;
-  font-size: 11.5px;
-  color: var(--ink-dim);
-  opacity: 0.7;
-}
+footer{ margin-top:34px; font-size:12.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-dim); opacity:0.85; }
 </style>
 </head>
 <body>
 
 <div class="card">
   <div class="eyebrow">You're Invited</div>
+
+  <div class="badge">
+    <div class="inner-ring"></div>
+    <svg viewBox="0 0 270 270">
+      <path id="arcTop" d="M 42 135 A 93 93 0 0 1 228 135" fill="none"></path>
+      <path id="arcBot" d="M 38 135 A 97 97 0 0 0 232 135" fill="none"></path>
+      <text style="font-family:'Barlow Condensed';font-size:17px;font-weight:600;letter-spacing:6px;fill:#3b2f24"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">ERIKA · CUARENTA AÑOS</textPath></text>
+      <text style="font-family:'Barlow Condensed';font-size:13px;font-weight:500;letter-spacing:5px;fill:#7a4a2b"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">TEQUILA · JALISCO · MX</textPath></text>
+      <g stroke="#6b7a5a" stroke-width="2.5" stroke-linecap="round">
+        <line x1="135" y1="103" x2="135" y2="76"></line>
+        <line x1="135" y1="103" x2="120" y2="80"></line>
+        <line x1="135" y1="103" x2="150" y2="80"></line>
+        <line x1="135" y1="103" x2="109" y2="90"></line>
+        <line x1="135" y1="103" x2="161" y2="90"></line>
+        <line x1="135" y1="103" x2="104" y2="101"></line>
+        <line x1="135" y1="103" x2="166" y2="101"></line>
+      </g>
+    </svg>
+    <div class="center">
+      <div class="forty">40</div>
+      <div class="rule"><div class="line"></div><div class="diamond"></div><div class="line"></div></div>
+      <div class="est">EST. 1986</div>
+    </div>
+  </div>
+
   <h1>Erika's <em>40th</em> Birthday Celebration</h1>
-  <div class="location-line">Jalisco, Mexico</div>
-  <div class="dates-line">November 20–28, 2026</div>
+  <div class="location-line">Jalisco · México</div>
+  <div class="dates-line">November 20 – 28, 2026</div>
 
-  <div class="divider"></div>
+  <div style="margin-bottom:0"></div>
 
-  <a class="cta-btn" href="itinerary.html">View the Itinerary →</a>
-  <div class="cta-sub">Distilleries, dinners, and everything in between.</div>
+  <div>
+    <a class="cta-btn" href="itinerary.html">View the Itinerary →</a>
+    <div class="cta-sub">Distilleries, dinners, and everything in between.<br>Or add a spot to the <a href="gdl_places_tracker.html">Saved Places list</a>.</div>
+  </div>
 
   <div class="rsvp-box">
     <div class="label">RSVP</div>
     <p>Let us know if you're coming by <strong>August 31st</strong>, so we can factor you into group bookings — hotels, distillery tours, and shuttles all go faster the sooner we have a headcount.</p>
   </div>
 
-  <footer>Jalisco &middot; Tequila Valley &middot; Agave &amp; friends</footer>
+  <footer>Jalisco · Tequila Valley</footer>
 </div>
 
 </body>
