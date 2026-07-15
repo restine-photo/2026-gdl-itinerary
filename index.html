@@ -159,6 +159,31 @@ h1 em{
 
 .day-card strong{ color: var(--ink); font-weight: 700; }
 
+.time-row{
+  display: flex;
+  gap: 14px;
+  margin-bottom: 11px;
+}
+
+.time-row:last-child{ margin-bottom: 0; }
+
+.time-label{
+  flex-shrink: 0;
+  width: 68px;
+  font-weight: 700;
+  font-size: 12.5px;
+  color: var(--accent-pale);
+  padding-top: 1px;
+}
+
+.time-text{
+  font-size: 14px;
+  color: var(--ink-dim);
+  line-height: 1.55;
+}
+
+.time-text strong{ color: var(--ink); font-weight: 700; }
+
 .tag{
   display: inline-block;
   font-size: 10.5px;
@@ -206,9 +231,13 @@ footer{
       <div class="day-date">Friday, Nov 20</div>
       <div class="day-title">Arrival <span class="tag">Early landing</span></div>
       <div class="day-card">
-        <p>Land around 6am — GDL and Chicago share a time zone, so it's an early morning rather than jet lag. Uber to the hotel in <strong>Colonia Americana / Chapultepec</strong> by ~7:30-8am.</p>
-        <p>Ask about early check-in, or drop bags at the front desk and use the morning for a slow coffee walk around the neighborhood.</p>
-        <p>Rest once the room's ready. Easy, early dinner at <strong>La Posta</strong>.</p>
+        <div class="time-row"><div class="time-label">12:25am</div><div class="time-text">Depart ORD, non-stop.</div></div>
+        <div class="time-row"><div class="time-label">4:39am</div><div class="time-text">Land at GDL. Same time zone as Chicago, so it's an early morning rather than jet lag.</div></div>
+        <div class="time-row"><div class="time-label">5:00am</div><div class="time-text">Private group shuttle from the airport to the hotel in <strong>Colonia Americana / Chapultepec</strong>.</div></div>
+        <div class="time-row"><div class="time-label">6:00am</div><div class="time-text">Arrive at hotel. Ask about early check-in, or drop bags at the front desk.</div></div>
+        <div class="time-row"><div class="time-label">7:00am</div><div class="time-text">Slow coffee walk around the neighborhood while the room isn't ready yet.</div></div>
+        <div class="time-row"><div class="time-label">Afternoon</div><div class="time-text">Rest at the hotel once the room's ready.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Easy, early dinner at <strong>La Posta</strong>.</div></div>
       </div>
     </div>
   </div>
@@ -219,8 +248,9 @@ footer{
       <div class="day-date">Saturday, Nov 21</div>
       <div class="day-title">Centro Histórico</div>
       <div class="day-card">
-        <p>Morning walking tour with <strong>Camina GDL</strong> — Cathedral, Teatro Degollado, Hospicio Cabañas.</p>
-        <p>Dinner at <strong>Elefante de Piedra</strong>, drinks after at <strong>Tiny Bar Speakeasy</strong>.</p>
+        <div class="time-row"><div class="time-label">9:00am</div><div class="time-text">Walking tour with <strong>Camina GDL</strong> — Cathedral, Teatro Degollado, Hospicio Cabañas.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Dinner at <strong>Elefante de Piedra</strong>.</div></div>
+        <div class="time-row"><div class="time-label">9:00pm</div><div class="time-text">Drinks at <strong>Tiny Bar Speakeasy</strong>.</div></div>
       </div>
     </div>
   </div>
@@ -231,8 +261,8 @@ footer{
       <div class="day-date">Sunday, Nov 22</div>
       <div class="day-title">Tlaquepaque</div>
       <div class="day-card">
-        <p>Day trip to the artisan village — galleries, ceramics, glassblowing, wandering Calle Independencia.</p>
-        <p>Dinner at <strong>Brasa y Sal</strong> back in Chapultepec.</p>
+        <div class="time-row"><div class="time-label">10:00am</div><div class="time-text">Day trip to <strong>Tlaquepaque</strong> — galleries, ceramics, glassblowing, wandering Calle Independencia.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Dinner at <strong>Brasa y Sal</strong> back in Chapultepec.</div></div>
       </div>
     </div>
   </div>
@@ -241,11 +271,12 @@ footer{
     <div class="day-rail"><div class="day-num">4</div><div class="day-line"></div></div>
     <div class="day-body">
       <div class="day-date">Monday, Nov 23</div>
-      <div class="day-title">Move to Tequila town <span class="tag">Change of base</span></div>
+      <div class="day-title">Move to Tequila town <span class="tag">Private shuttle</span></div>
       <div class="day-card">
-        <p>Transfer out to the town of Tequila (~1 hr). Check into <strong>Casa Salles Hotel</strong> or <strong>Hotel Gloriagave</strong> for two nights.</p>
-        <p>Casa Salles sits right next to <strong>El Tequileño</strong> distillery — an easy, low-effort visit the same afternoon if staying there.</p>
-        <p>Dinner at <strong>La Taberna del Cofrade</strong>, the underground tavern-style restaurant.</p>
+        <div class="time-row"><div class="time-label">10:00am</div><div class="time-text">Private group shuttle, door-to-door, from the Guadalajara hotel to Tequila town (~1 hr). One vehicle for the whole group rather than splitting into separate cars — more comfortable with luggage and keeps everyone together.</div></div>
+        <div class="time-row"><div class="time-label">11:00am</div><div class="time-text">Check into <strong>Casa Salles Hotel</strong> or <strong>Hotel Gloriagave</strong> for two nights.</div></div>
+        <div class="time-row"><div class="time-label">1:00pm</div><div class="time-text"><strong>El Tequileño</strong> distillery — sits right next to Casa Salles, an easy walk if staying there.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Dinner at <strong>La Taberna del Cofrade</strong>, the underground tavern-style restaurant.</div></div>
       </div>
     </div>
   </div>
@@ -256,10 +287,11 @@ footer{
       <div class="day-date">Tuesday, Nov 24</div>
       <div class="day-title">Distillery day <span class="tag">Headliners</span></div>
       <div class="day-card">
-        <p><strong>Arette</strong> (El Llano Distillery) in the morning — Orendain family, over 125 years independent, additive-free small-batch.</p>
-        <p><strong>La Fortaleza</strong> midday — Sauza family descendants, the most traditional production method in the valley, tasting inside their cave.</p>
-        <p>If there's time and energy left, <strong>Cascahuín</strong> in El Arenal is a short hop and already a favorite from the saved list.</p>
-        <p><strong>Vive Tequila Tour</strong> or <strong>Explora México Tours</strong> can likely arrange the logistics for this route.</p>
+        <div class="time-row"><div class="time-label">9:00am</div><div class="time-text">Private van pickup — <strong>Vive Tequila Tour</strong> or <strong>Explora México Tours</strong> can likely cover this whole route so the group isn't managing separate rides between stops.</div></div>
+        <div class="time-row"><div class="time-label">9:30am</div><div class="time-text"><strong>Arette</strong> (El Llano Distillery) — Orendain family, over 125 years independent, additive-free small-batch.</div></div>
+        <div class="time-row"><div class="time-label">12:00pm</div><div class="time-text"><strong>La Fortaleza</strong> — Sauza family descendants, the most traditional production method in the valley, tasting inside their cave.</div></div>
+        <div class="time-row"><div class="time-label">2:30pm</div><div class="time-text">If there's time and energy left, <strong>Cascahuín</strong> in El Arenal — a short hop, already a favorite from the saved list.</div></div>
+        <div class="time-row"><div class="time-label">5:00pm</div><div class="time-text">Evening capstone: <strong>Cantaritos El Güero</strong> in nearby Amatitán — lively, family-run cantarito bar with live mariachi/banda after 4pm. Festive and casual rather than another formal tasting.</div></div>
       </div>
     </div>
   </div>
@@ -270,8 +302,10 @@ footer{
       <div class="day-date">Wednesday, Nov 25</div>
       <div class="day-title">Back to Guadalajara</div>
       <div class="day-card">
-        <p>Transfer back to GDL, check into the city hotel for the remaining nights.</p>
-        <p>Easy afternoon, relaxed dinner — good night to just wing it based on what's nearby.</p>
+        <div class="time-row"><div class="time-label">10:00am</div><div class="time-text">Private group shuttle back to Guadalajara, same approach as the trip out.</div></div>
+        <div class="time-row"><div class="time-label">12:00pm</div><div class="time-text">Check into the city hotel for the remaining nights.</div></div>
+        <div class="time-row"><div class="time-label">Afternoon</div><div class="time-text">Easy afternoon — nothing planned.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Relaxed dinner — good night to just wing it based on what's nearby.</div></div>
       </div>
     </div>
   </div>
@@ -282,7 +316,7 @@ footer{
       <div class="day-date">Thursday, Nov 26</div>
       <div class="day-title">Flex day</div>
       <div class="day-card">
-        <p>Open day — more Chapultepec exploring, shopping, or a repeat visit to a favorite spot from earlier in the week.</p>
+        <div class="time-row"><div class="time-label">All day</div><div class="time-text">Open — more Chapultepec exploring, shopping, or a repeat visit to a favorite spot from earlier in the week.</div></div>
       </div>
     </div>
   </div>
@@ -293,8 +327,8 @@ footer{
       <div class="day-date">Friday, Nov 27</div>
       <div class="day-title">Last full day <span class="tag">Send-off dinner</span></div>
       <div class="day-card">
-        <p>Wrap-up day — anything missed, souvenirs, packing.</p>
-        <p>Good candidate for a last-hurrah dinner, since there's nowhere to be early the next morning but the airport.</p>
+        <div class="time-row"><div class="time-label">Morning</div><div class="time-text">Wrap-up: anything missed, souvenirs, packing.</div></div>
+        <div class="time-row"><div class="time-label">7:00pm</div><div class="time-text">Last-hurrah dinner — nowhere to be early the next morning but the airport.</div></div>
       </div>
     </div>
   </div>
@@ -303,9 +337,12 @@ footer{
     <div class="day-rail"><div class="day-num">9</div></div>
     <div class="day-body">
       <div class="day-date">Saturday, Nov 28</div>
-      <div class="day-title">Departure</div>
+      <div class="day-title">Departure <span class="tag">Afternoon flight</span></div>
       <div class="day-card">
-        <p>Fly back to Chicago.</p>
+        <div class="time-row"><div class="time-label">Morning</div><div class="time-text">Free morning — a last coffee, a final walk around the neighborhood, or a relaxed pack-up.</div></div>
+        <div class="time-row"><div class="time-label">11:00am</div><div class="time-text">Leave the hotel — private shuttle to the airport.</div></div>
+        <div class="time-row"><div class="time-label">1:54pm</div><div class="time-text">Depart GDL, non-stop.</div></div>
+        <div class="time-row"><div class="time-label">6:10pm</div><div class="time-text">Land at ORD.</div></div>
       </div>
     </div>
   </div>
